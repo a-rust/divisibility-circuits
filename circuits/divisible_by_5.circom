@@ -1,3 +1,5 @@
+pragma circom 2.1.4;
+
 include "./base_10.circom";
 
 template IsDivisbleBy5 (n) {
