@@ -45,3 +45,28 @@ template IsDivisbleBy4 (n) {
    inv <-- mod != 0 ? 1/mod : 0;
    out <== -mod*inv + 1;
 }
+
+template IsDivisbleBy8 (n) {
+   signal input in;   
+   signal a[n];
+   signal suffix;
+   signal mod;
+   signal inv;
+   // Output out will be 1 if in is divisible by 8; 0 otherwise
+   signal output out;
+
+   component digits = Num2Digits(n);
+   digits.in <== in;
+   digits.out --> a;
+
+   component num = Digits2Num(3);
+
+   // Conctination of last 3 digits of in
+   num.in <-- [a[0], a[1], a[2]];
+   num.out ==> suffix;
+
+   // If the concatination of the last 3 digits of in is divisible by 8, then in itself is divisible by 8
+   mod <-- suffix % 8;
+   inv <-- mod != 0 ? 1/mod : 0;
+   out <== -mod*inv + 1;
+}
