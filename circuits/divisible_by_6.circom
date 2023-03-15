@@ -3,7 +3,7 @@ pragma circom 2.1.4;
 include "./base_10.circom";
 
 
-template IsDivisbleBy6 (n) {
+template IsDivisibleBy6 (n) {
    signal input in;   
    signal a[n];
    signal mod;

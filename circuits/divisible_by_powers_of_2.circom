@@ -2,7 +2,7 @@ pragma circom 2.1.4;
 
 include "./base_10.circom";
 
-template IsDivisbleBy2 (n) {
+template IsDivisibleBy2 (n) {
    signal input in;   
    signal a[n];
    signal mod;
@@ -21,7 +21,7 @@ template IsDivisbleBy2 (n) {
    out <== -mod*inv + 1;
 }
 
-template IsDivisbleBy4 (n) {
+template IsDivisibleBy4 (n) {
    signal input in;   
    signal a[n];
    signal suffix;
@@ -46,7 +46,7 @@ template IsDivisbleBy4 (n) {
    out <== -mod*inv + 1;
 }
 
-template IsDivisbleBy8 (n) {
+template IsDivisibleBy8 (n) {
    signal input in;   
    signal a[n];
    signal suffix;

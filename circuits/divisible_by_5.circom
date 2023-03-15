@@ -2,7 +2,7 @@ pragma circom 2.1.4;
 
 include "./base_10.circom";
 
-template IsDivisbleBy5 (n) {
+template IsDivisibleBy5 (n) {
    signal input in;   
    signal a[n];
    signal ldsum;
