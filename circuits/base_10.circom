@@ -29,3 +29,19 @@ template Num2Digits (n) {
    total === in;
 
 }
+
+template Digits2Num (n) {
+   signal input in[n];
+   signal output out;
+
+   var total = 0;
+   var exp10 = 1;
+
+   for (var i = 0; i < n; i++) {
+      total += in[i] * exp10;
+      exp10 = exp10 * 10;
+   }
+
+   total ==> out;
+   
+}
