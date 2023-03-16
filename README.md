@@ -35,7 +35,7 @@ In the ring of integers, there are many [divisibility properties](https://en.wik
 Consider a prime field element $\alpha = a_n10^n + \dots + a_110^1 + a_010^0$, where $a_i\in[0..9]$. The divisibility properties used in these templates are as follows:  
 | Property                   | Condition                                                       |
 | -------------------------- | --------------------------------------------------------------- |
-| $\alpha$ is divisible by 2 | $$a_i \equiv 0 \mod 2$$                                         |
+| $\alpha$ is divisible by 2 | $$a_0 \equiv 0 \mod 2$$                                         |
 | $\alpha$ is divisible by 3 | $$\sum_{i=0}^{n}a_i \equiv 0 \mod 3$$                           |
 | $\alpha$ is divisible by 4 | $$concat_2(a_1, a_0) \equiv 0 \mod 4$$                                    |
 | $\alpha$ is divisible by 5 | $$2a_0 \equiv 0 \mod 10$$                                   |
