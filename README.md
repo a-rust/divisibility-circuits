@@ -41,7 +41,7 @@ Consider a prime field element $\alpha = a_n10^n + \dots + a_110^1 + a_010^0$, w
 | $\alpha$ is divisible by 4 | $$concat_2(a_1, a_0) \equiv 0 \mod 4$$                                    |
 | $\alpha$ is divisible by 5 | $$2a_0 \equiv 0 \mod 10$$                                   |
 | $\alpha$ is divisible by 6 | $$a_0 + 4\sum_{i=1}^{n}a_i \equiv 0 \mod 6$$                      |
-| $\alpha$ is divisible by 7 | $$5a_0 + concat_{n-1}(a_n, a_{n-1}, \dots , a_{1}) \equiv 0 \mod 7$$ |
+| $\alpha$ is divisible by 7 | $$5a_0 + concat_{n}(a_n, a_{n-1}, \dots , a_{1}) \equiv 0 \mod 7$$ |
 | $\alpha$ is divisible by 8 | $$concat_3(a_2, a_1, a_0) \equiv 0 \mod 8$$                             |
 | $\alpha$ is divisible by 9 | $$\sum_{i=0}^{n}a_i \equiv 0 \mod 9$$                             |
 
